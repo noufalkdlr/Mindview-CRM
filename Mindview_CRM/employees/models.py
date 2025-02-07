@@ -10,7 +10,7 @@ aadhaar_validator = RegexValidator(
 class EmployeesDetails(models.Model):
     image = models.ImageField(upload_to='employee_image')
     name = models.CharField(max_length=100)
-    designation = models.CharField()
+    designation = models.CharField(max_length=100)
     d_o_b = models.DateField()
     date_of_joining = models.DateField()
     blood_group = models.CharField(max_length=3)
