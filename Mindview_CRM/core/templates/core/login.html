@@ -1,15 +1,27 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block title %}login page{% endblock title %}login page
+{% block title %}login page{% endblock title %}
+{% block style %}<link rel="stylesheet" href="{% static 'core/login.css' %}">{% endblock style %}
 
 {% block content %}
 
-<form method="POST">
+{% comment %} <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" class="btn btn-primary">Login</button>
-</form>
-<p>Don't have an account? <a href="{% url 'core:signup' %}">Sign up here</a></p>
+</form> {% endcomment %}
+
+<section id="login">
+    <div class="box" >
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</section>
+
 
 
 {% endblock content %}
