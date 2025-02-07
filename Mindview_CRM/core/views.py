@@ -47,13 +47,27 @@ def login_view(request):
 
 
 
+# def signup_view(request):
+#     if request.method == 'POST':
+#         form = SignUpForm(request.POST)
+#         if form.is_valid():
+#             user = form.save() 
+#             login(request, user)  
+#             return redirect('core:login')  
+#     else:
+#         form = SignUpForm()
+
+#     return render(request, 'core/signup.html', {'form': form})
+
 def signup_view(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
-            user = form.save() 
-            login(request, user)  
-            return redirect('core:login')  
+            form.save()
+            return redirect('core:login')
+        else:
+            print(form.errors)  # This will print errors in the terminal
+
     else:
         form = SignUpForm()
 
