@@ -1,4 +1,4 @@
-
+{% extends "base.html" %}
 
 
 {% block title %}employees Detail{% endblock title %}
@@ -7,7 +7,7 @@
 
 {% block content %}
 
-
+    <img src="{{employee.image.url}}" alt="image" style="width: 10%;">
     <h1>{{employee.name}}</h1>
     
    
@@ -21,9 +21,10 @@
         {% csrf_token %}
         <button type="submit" onclick="return confirm('Are you sure you want to delete this employee?')">
             Delete Employee
-        </button>
-        
+        </button>    
     </form>
+
+    <button> <a href="{% url 'employees:emp_edit' employee.slug %}">Edit Employee</a></button>
 
 
 

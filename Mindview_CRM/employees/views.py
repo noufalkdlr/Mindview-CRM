@@ -38,3 +38,21 @@ def add_employee(request):
 
     return render(request, 'employees/add_employee.html',{'form':form})
 
+
+
+def edit_employee(request, slug):
+    employee = get_object_or_404(EmployeesDetails, slug=slug)
+
+    if request.method == 'POST':
+        form = EmployeesDetailsForm(request.POST,request.FILES,instance=employee)
+
+        if form.is_valid():
+            form.save()
+            return redirect('employees:emp_detail', slug=employee.slug)
+        
+
+    else:
+        form =EmployeesDetailsForm(instance=employee)
+
+
+    return render(request,'employees/edit_employee.html',{'form':form, 'employee': employee})
