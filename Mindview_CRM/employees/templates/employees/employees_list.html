@@ -1,0 +1,14 @@
+
+    {% block title %}employees list{% endblock title %}
+
+    
+
+    {% block content %}
+
+    {% for emp in emp_list %}
+    <ul>
+        <li><a href="{% url "employees:emp_detail" emp.slug %}">{{emp.name}}</a></li>
+    </ul>
+        
+    {% endfor %}
+    {% endblock content %}

@@ -85,7 +85,7 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mindview_db', 
+        'NAME': 'db_mindview',
         'USER': 'root', 
         'PASSWORD': 'password123',  
         'HOST': 'localhost', 
