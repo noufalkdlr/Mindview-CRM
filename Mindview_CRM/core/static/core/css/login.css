@@ -1,0 +1,55 @@
+@import url("/static/css/fonts.css");
+
+
+
+p{
+    font-family: 'helvetica-now';
+    font-weight: 100;
+}
+
+
+#login{
+    background-color: #F3F5F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#login .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 40%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.014), 3px 3px 10px 0 rgba(0, 0, 0, 0.021);
+    border-radius: 1rem;
+}
+
+#login .box .welcome h1 {
+    font-family: 'helvetica now', sans-serif;
+    font-weight: 600;
+}
+
+#login .box form .l-i{
+    display: flex;
+    flex-direction: column;
+}
+
+#login .box .welcome{
+    text-align: center;
+}
+
+
+
+
+#login .box form .l-i label{
+    margin-bottom: .5rem;
+}
+
+#login .box form .l-i input{
+    margin-bottom: 1rem;
+}

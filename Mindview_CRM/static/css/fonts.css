@@ -1,0 +1,35 @@
+@font-face{
+    font-family:'helvetica now' ;
+    src: url('../fonts/HelveticaNowDisplay-Thin.ttf') format('truetype');
+    font-weight: 50;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'helvetica now' ;
+    src: url('../fonts/HelveticaNowDisplay-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'helvetica now';
+    src: url('../fonts/HelveticaNowDisplay-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'helvetica now';
+    src: url(../fonts/HelveticaNowDisplay-Medium.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvetica now';
+    src: url('../fonts/HelveticaNowDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

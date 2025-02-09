@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}login page{% endblock title %}
-{% block style %}<link rel="stylesheet" href="{% static 'core/login.css' %}">{% endblock style %}
+{% block style %}<link rel="stylesheet" href="{% static 'core/css/login.css' %}">{% endblock style %}
 
 {% block content %}
 
@@ -14,9 +14,22 @@
 
 <section id="login">
     <div class="box" >
+        <div class='welcome'>
+            <h1>Welcome back</h1>
+            <p>Please enter your details to sign in</p>
+        </div>
+
         <form method="POST">
             {% csrf_token %}
-            {{ form.as_p }}
+                <div class='l-i'>
+                    <label for="{{ form.username.id_for_label }}">Username</label>
+                    {{form.username}}
+                </div>
+                <div class='l-i' >
+                    <label for="{{ form.password.id_for_label }}">Password</label>
+                    {{form.password}}
+                </div>
+            
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
     </div>
