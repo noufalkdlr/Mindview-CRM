@@ -11,4 +11,7 @@
     </ul>
         
     {% endfor %}
+
+    <a href="{% url "employees:emp_add" %}">Add New employee</a> <br>
+    <a href="{% url "core:dashboard" %}">Go to dashboard</a>
     {% endblock content %}

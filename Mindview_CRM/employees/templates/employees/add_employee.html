@@ -1,0 +1,14 @@
+
+{% block title %}Add new employee{% endblock title %}
+
+    
+
+{% block content %}
+
+<form action="{% url 'employees:emp_add' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Employee</button>
+</form>
+
+{% endblock content %}
