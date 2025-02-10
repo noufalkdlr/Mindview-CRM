@@ -2,10 +2,6 @@
 
 
 
-p{
-    font-family: 'helvetica-now';
-    font-weight: 100;
-}
 
 
 #login{
@@ -27,29 +23,83 @@ p{
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.014), 3px 3px 10px 0 rgba(0, 0, 0, 0.021);
     border-radius: 1rem;
+    
 }
 
-#login .box .welcome h1 {
-    font-family: 'helvetica now', sans-serif;
-    font-weight: 600;
-}
-
-#login .box form .l-i{
+#login .box .content{
+    /* background-color: rgb(36, 21, 175); */
+    width: 80%;
     display: flex;
     flex-direction: column;
+    /* overflow: hidden; */
 }
 
-#login .box .welcome{
-    text-align: center;
+#login .box .content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#login .box .content form .l-i{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#login .box .content .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    
+    
+}
+
+#login .box .content .logo img{
+    width: 40%;
 }
 
 
 
 
-#login .box form .l-i label{
+#login .box .content form .l-i label{
     margin-bottom: .5rem;
+    font-family: 'helvetica now';
+    font-weight: 200;
+    font-size: .8rem;
+    
+    /* background-color: bisque; */
 }
 
-#login .box form .l-i input{
+#login .box .content form .l-i input{
+    background: none;
+    border: 1px solid rgb(230, 230, 230);
+    outline: none;
+    box-shadow: none;
+    padding: 1rem .5rem;
     margin-bottom: 1rem;
+    width: 100%;
+    border-radius: .3rem;
+}
+
+#login .box .content form .l-i input:focus{
+    border: 1px solid rgb(73, 73, 73);
+}
+
+
+#login .box .content form button{
+    all: unset;
+    cursor: pointer;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+    font-family: 'helvetica now';
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 100%;
+    border-radius: .3rem;
 }
