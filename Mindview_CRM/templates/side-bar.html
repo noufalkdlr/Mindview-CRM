@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'css/side-bar.css' %}">{% endblock style %}
+
+
+
+{% block content %}
+    <div class="sidebar">
+        <div>
+            
+        </div>
+        <div class="dash-items">
+            <a href="{% url "core:dashboard" %}">Dashboard</a>
+            <a href="{% url 'employees:employees'%}">Employees List </a>
+        </div>
+        
+        <ul>
+            <li><a href="{% url 'core:home' %}">Go to Home</a></li>
+            <li><a href="{% url 'core:logout' %}">Logout</a></li>
+        </ul>
+    </div>
+{% endblock content %}
+
+
+

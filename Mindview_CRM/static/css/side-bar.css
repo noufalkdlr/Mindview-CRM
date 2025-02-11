@@ -1,0 +1,35 @@
+@import url("../css/fonts.css");
+
+.sidebar{
+    background-color: #fff;
+    width: 15%;
+    height: 100vh;
+    padding: 1% 1.5%;
+}
+
+.sidebar img{
+    width: 60%;
+    margin-bottom: 20%;
+}
+
+.sidebar .dash-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .dash-items a{
+    margin: 5% 0;
+    font-family: 'helvetica now';
+    font-weight: 200;
+
+
+}
+
+@media (min-width: 2560px){
+    .sidebar{
+        width: 10%;
+    }
+
+    
+
+}

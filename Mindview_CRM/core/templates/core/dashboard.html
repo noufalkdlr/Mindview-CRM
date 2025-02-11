@@ -1,8 +1,12 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Home page{% endblock title %}
+{% block style %}<link rel="stylesheet" href="{% static 'core/css/dashboard.css' %}">{% endblock style %}
 
 {% block content %}
+
+
 
 <h1>This is dashboard</h1>
 <h2>Admin Dashboard</h2>
@@ -14,4 +18,10 @@
     <li><a href="{% url 'core:home' %}">Go to Home</a></li>
     <li><a href="{% url 'core:logout' %}">Logout</a></li>
 </ul>
+
+
+
+
+
+
 {% endblock content %}

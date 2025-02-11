@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+    
+    {% block style %}<link rel="stylesheet" href="{% static 'css/navbar.css' %}">{% endblock style %}
+
+    
+
+    {% block content %}
+
+    <nav>
+        <h1>{{header_name}}</h1>
+    </nav>
+    
+
+    {% endblock content %}

@@ -1,19 +1,46 @@
 {% extends "base.html" %}
+{% load static %}
 
 
     {% block title %}employees list{% endblock title %}
+    {% block style %}<link rel="stylesheet" href="{% static 'employees/css/emp-list-page.css' %}">{% endblock style %}
 
     
 
     {% block content %}
 
-    {% for emp in emp_list %}
-    <ul>
-        <li><a href="{% url "employees:emp_detail" emp.slug %}">{{emp.name}}</a></li>
-    </ul>
-        
-    {% endfor %}
+    <section id='emp-list-page'>
+        <div class="side-bar">
+            sidebar
+            <a href="{% url "core:dashboard" %}">Go to dash board</a>
 
-    <a href="{% url "employees:emp_add" %}">Add New employee</a> <br>
-    <a href="{% url "core:dashboard" %}">Go to dashboard</a>
+        </div>
+        <div class="emp-main">
+            <nav>
+                navbar
+                <div>
+                    <a href="{% url "employees:emp_add" %}">Add New employee</a>
+                    <a href="{% url 'core:logout' %}">Logout</a>
+                </div>
+
+            </nav>
+            <div class="emp-content">
+                {% for emp in emp_list %}
+                <ul>
+                    <li><a href="{% url "employees:emp_detail" emp.slug %}">{{emp.name}}</a></li>
+                </ul>
+            
+            {% endfor %}
+            
+                
+            </div>
+        </div>
+
+
+    </section> 
+
+                
+
+    
+
     {% endblock content %}

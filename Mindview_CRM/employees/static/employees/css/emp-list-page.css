@@ -1,0 +1,29 @@
+#emp-list-page{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#emp-list-page .side-bar{
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+}
+
+#emp-list-page .emp-main{
+    width: 85%;
+    background-color: bisque;
+}
+
+#emp-list-page .emp-main nav{
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0 5rem;
+}

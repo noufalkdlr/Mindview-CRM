@@ -1,0 +1,17 @@
+#dashboard{
+    display: flex;
+    width: 100%;
+}
+
+
+#dashboard .dash-content{
+    background-color: #FAFAFA;
+    width: 85%;
+    background-color: bisque;
+
+}
+
+@media (min-width: 2560px){
+    
+
+}
