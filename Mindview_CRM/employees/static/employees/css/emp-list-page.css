@@ -5,25 +5,11 @@
     
 }
 
-#emp-list-page .side-bar{
-    width: 15%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: blanchedalmond;
-}
-
 #emp-list-page .emp-main{
     width: 85%;
-    background-color: bisque;
+    background-color: #FAFAFA;
 }
 
-#emp-list-page .emp-main nav{
-    background-color: aquamarine;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 4rem;
+#emp-list-page .emp-main .emp-content{
     padding: 0 5rem;
 }

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block style %}<link rel="stylesheet" href="{% static 'css/side-bar.css' %}">{% endblock style %} 
+
+{% block content %}
+    <div class="side-bar">
+        <img src="{% static 'images/Mindview-Logo-White.svg' %}" alt="img">
+        <hr>
+        <div class='sidebar-btn'>
+            <a href="{% url "core:dashboard" %}" class="{% if request.path == '/dashboard/' %}active{% endif %}">Dash board</a>
+            <a href="{% url 'employees:employees'%}" class="{% if request.path == '/employees/' %}active{% endif %}">Employees list </a>
+
+
+        </div>
+
+
+    </div>
+
+{% endblock content %}
+
+
+
+

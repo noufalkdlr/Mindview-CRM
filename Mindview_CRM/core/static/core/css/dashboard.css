@@ -1,15 +1,18 @@
 #dashboard{
     display: flex;
     width: 100%;
+    
 }
 
 
-#dashboard .dash-content{
-    background-color: #FAFAFA;
+#dashboard .dashboard-main{
     width: 85%;
-    background-color: bisque;
-
 }
+
+#dashboard .dashboard-main .dash-content{
+    padding: 0 5rem;
+}
+
 
 @media (min-width: 2560px){
     

@@ -8,16 +8,26 @@
 
 
 
-<h1>This is dashboard</h1>
-<h2>Admin Dashboard</h2>
-<p>Welcome, {{ request.user.username }}! You are logged in as an admin.</p>
 
-<a href="{% url 'employees:employees'%}">Employees list </a>
+<section id='dashboard'>
 
-<ul>
-    <li><a href="{% url 'core:home' %}">Go to Home</a></li>
-    <li><a href="{% url 'core:logout' %}">Logout</a></li>
-</ul>
+    {% include "sidebar.html" %}
+
+    <div class="dashboard-main">
+        {% include "navbar.html" with title="Dash Board" show_add_employee=False%}
+
+        <div class="dash-content">
+            <a href="{% url 'core:home' %}">Go to Home</a>
+            <a href="{% url 'core:logout' %}">Logout</a>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+
 
 
 

@@ -10,20 +10,12 @@
     {% block content %}
 
     <section id='emp-list-page'>
-        <div class="side-bar">
-            sidebar
-            <a href="{% url "core:dashboard" %}">Go to dash board</a>
+        {% include "sidebar.html" %}
+
 
         </div>
         <div class="emp-main">
-            <nav>
-                navbar
-                <div>
-                    <a href="{% url "employees:emp_add" %}">Add New employee</a>
-                    <a href="{% url 'core:logout' %}">Logout</a>
-                </div>
-
-            </nav>
+                {% include "navbar.html" with title="Employee List" show_add_employee=True %}
             <div class="emp-content">
                 {% for emp in emp_list %}
                 <ul>

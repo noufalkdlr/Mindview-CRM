@@ -10,7 +10,15 @@
     {% block content %}
 
     <nav>
-        <h1>{{header_name}}</h1>
+        <h1>{{title}}</h1>
+        <div class='btn'>
+            {% if show_add_employee %}
+                <a href="{% url "employees:emp_add" %}">Add New employee</a>
+            {% endif %}
+           
+            <a href="{% url 'core:logout' %}" class='logout-btn' >Logout</a>
+        </div>
+
     </nav>
     
 
