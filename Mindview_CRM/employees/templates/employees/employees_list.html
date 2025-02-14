@@ -13,20 +13,48 @@
         {% include "sidebar.html" %}
 
 
-        </div>
+        
         <div class="emp-main">
                 {% include "navbar.html" with title="Employee List" show_add_employee=True %}
             <div class="emp-content">
-                {% for emp in emp_list %}
-                <ul>
-                    <li><a href="{% url "employees:emp_detail" emp.slug %}">{{emp.name}}</a></li>
-                </ul>
-            
-            {% endfor %}
-            
-                
+                <div class="emp-table">
+                    <div class="heading">
+                        <div class="name">
+                            Name
+                        </div>
+                        <div class="name">
+                            Name
+                        </div>
+                        <div class="name">
+                            Name
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+                {% comment %} <div>
+                    {% for emp in emp_list %}
+                        <div class='emp-detail-list'>
+                            <div>
+                                <a href="{% url "employees:emp_detail" emp.slug %}">{{ forloop.counter }}</a>
+                            </div>
+                            <div>
+                                <a href="{% url "employees:emp_detail" emp.slug %}">{{emp.name}}</a>
+                            </div>
+                            <div>
+                                <a href="{% url "employees:emp_detail" emp.slug %}">{{emp.designation}}</a>
+                            </div>
+                            <div>
+                                <a href="{% url "employees:emp_detail" emp.slug %}">{{emp.date_of_joining}}</a>
+                            </div>
+                            <div>
+                                <a href="{% url "employees:emp_detail" emp.slug %}"></a>
+                            </div>
+                        </div>
+     
+                    {% endfor %}
+                    
+        </div> {% endcomment %}
 
 
     </section> 

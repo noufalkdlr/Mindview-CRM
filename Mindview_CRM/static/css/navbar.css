@@ -10,6 +10,29 @@ nav{
 
 nav h1{
     font-weight: 600;
+    font-size: 1.8rem;
+    color: rgb(75, 75, 75);
+}
+
+nav .btn .add-btn{
+    padding: .7rem 1.3rem;
+    border-radius: .2rem;
+    color: white;
+    background-color: #000000;
+    display: inline-block;
+    transition: transform 0.1s ease, background-color 0.2s ease-in-out;
+
+}
+
+nav .btn .add-btn i{
+    margin-right: .5rem;
+
+}
+
+
+nav .btn .add-btn:active{
+    transform: scale(0.95);
+    color:#858585;
 }
 
 nav .btn .logout-btn{

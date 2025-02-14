@@ -3,7 +3,10 @@
 
 
     
-    {% block style %}<link rel="stylesheet" href="{% static 'css/navbar.css' %}">{% endblock style %}
+    {% block style %}
+        <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    {% endblock style %}
 
     
 
@@ -13,7 +16,7 @@
         <h1>{{title}}</h1>
         <div class='btn'>
             {% if show_add_employee %}
-                <a href="{% url "employees:emp_add" %}">Add New employee</a>
+                <a href="{% url "employees:emp_add" %}" class='add-btn' > <i class="fas fa-plus"></i> Add Employee</a>
             {% endif %}
            
             <a href="{% url 'core:logout' %}" class='logout-btn' >Logout</a>

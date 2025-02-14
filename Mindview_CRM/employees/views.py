@@ -8,7 +8,7 @@ from .forms import EmployeesDetailsForm
 
 def employees(request):
     
-    emp_list = EmployeesDetails.objects.all()
+    emp_list = EmployeesDetails.objects.all().order_by('date_of_joining')
 
     return render(request,'employees/employees_list.html',{'emp_list': emp_list})
 
