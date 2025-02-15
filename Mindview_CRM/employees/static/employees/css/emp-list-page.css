@@ -28,11 +28,13 @@
 }
 
 #emp-list-page .emp-main .emp-content .emp-table .heading{
-    /* background-color: rgb(173, 173, 173); */
+    background-color: black;
+    color: white;
     display: flex;
     width: 100%;
-    padding: 0 0 1rem 0;
-    border-bottom: 1px solid rgb(173, 173, 173);
+    padding: 1rem 1.5rem;
+    border-radius: .2rem;
+    margin-bottom: .5rem;
     
 
 }
@@ -57,29 +59,36 @@
     width: 31.666%;
 }
 
-#emp-list-page .emp-main .emp-content .emp-table .emp-list{
+#emp-list-page .emp-main .emp-content .emp-table .emp-list-p{
     width: 100%;
     display: flex;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgb(173, 173, 173);
+    flex-direction: column;
     
+    
+}
+
+#emp-list-page .emp-main .emp-content .emp-table .emp-list-p .emp-list{
+    width: 100%;
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgb(173, 173, 173);
 }
 
 #emp-list-page .emp-main .emp-content .emp-table .emp-list h4{
     font-weight: 200;
 }
 
-#emp-list-page .emp-main .emp-content .emp-table .emp-list .number{
+#emp-list-page .emp-main .emp-content .emp-table .emp-list-p .emp-list .number{
     width: 5%;
 }
 
-#emp-list-page .emp-main .emp-content .emp-table .emp-list .name{
+#emp-list-page .emp-main .emp-content .emp-table .emp-list-p .emp-list .name{
     width: 31.666%;
 }
-#emp-list-page .emp-main .emp-content .emp-table .emp-list .designation{
+#emp-list-page .emp-main .emp-content .emp-table .emp-list-p .emp-list .designation{
     width: 31.666%;
 }
 
-#emp-list-page .emp-main .emp-content .emp-table .emp-list .date-of-joining{
+#emp-list-page .emp-main .emp-content .emp-table .emp-list-p .emp-list .date-of-joining{
     width: 31.666%;
-}
+} 

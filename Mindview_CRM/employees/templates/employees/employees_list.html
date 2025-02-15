@@ -36,50 +36,34 @@
                             
                         </div>
                     </div>
-                    <a href="">
-                        <div class="emp-list">
-                            <div class="number">
-                                <h4>1.</h4>
-                                
-                            </div>
-                            <div class="name">
-                                <h4>Muhammed Noufal</h4>
-                                
-                            </div>
-                            <div class="designation">
-                                <h4>Graphic Designer</h4>
-                                
-                            </div>
-                            <div class='date-of-joining'>
-                                <h4>20-03-2024</h4>
-                                
-                            </div>
-                            
-                        </div>
+                    <div class="emp-list-p">
+                        {% for emp in emp_list %}
+                            <a href="{% url "employees:emp_detail" emp.slug %}">
+                                <div class="emp-list">
+                                    <div class="number">
+                                        <h4>{{ forloop.counter }} .</h4>
+                                        
+                                    </div>
+                                    <div class="name">
+                                        <h4>{{emp.name}}</h4>
+                                        
+                                    </div>
+                                    <div class="designation">
+                                        <h4>{{emp.designation}}</h4>
+                                        
+                                    </div>
+                                    <div class='date-of-joining'>
+                                        <h4>{{emp.date_of_joining}}</h4>
+                                        
+                                    </div>
+                                    
+                                </div>
+        
+                            </a>
+                        {% endfor %}
 
-                    </a>
-                    <a href="">
-                        <div class="emp-list">
-                            <div class="number">
-                                <h4>1.</h4>
-                                
-                            </div>
-                            <div class="name">
-                                <h4>Muhammed Noufal</h4>
-                                
-                            </div>
-                            <div class="designation">
-                                <h4>Graphic Designer</h4>
-                                
-                            </div>
-                            <div class='date-of-joining'>
-                                <h4>20-03-2024</h4>
-                                
-                            </div>
-                            
-                        </div>
-
-                    </a>
+                    </div>
+                    
 
                 </div>
             </div>
